@@ -1,0 +1,81 @@
+<div name="searchFlight" id="searchFlight">
+    <fieldset id="search">
+        <div class="inline">
+     <mat-form-field>
+        <mat-label>Company</mat-label>
+        <mat-select>
+            <mat-option></mat-option>
+            <mat-option>Air France</mat-option>
+            <mat-option>Emirates</mat-option>
+
+        </mat-select>
+     </mat-form-field>
+    </div>
+    <div class="inline" >
+     <div class="left">
+     <mat-form-field class="left">
+        <mat-label>Trip</mat-label>
+        <mat-select>
+            <mat-option></mat-option>
+            <mat-option>One-Way ticket</mat-option>
+            <mat-option>Round trip</mat-option>
+
+        </mat-select>
+     </mat-form-field>
+
+     <mat-form-field class="right">
+        <mat-label>Flight type</mat-label>
+        <mat-select>
+            <mat-option></mat-option>
+            <mat-option>Direct flight</mat-option>
+            <mat-option>Connecting flight</mat-option>
+
+        </mat-select>
+     </mat-form-field>
+    </div>
+     <div class="right">
+     <mat-form-field>
+        <input matInput placeholder="Aircraft Type">
+     </mat-form-field>
+    </div>
+    </div>
+    <div class="inline">
+    <div class="left">
+    <mat-form-field>
+        <input matInput placeholder="Departing from">
+     </mat-form-field>
+     <mat-icon>flight_takeoff</mat-icon>
+    </div>  
+       <div class="right">
+        <mat-icon>flight_land</mat-icon>
+
+     <mat-form-field>
+        <input matInput placeholder="Arriving at">
+     </mat-form-field>
+    </div> 
+</div>
+<div class="inline">
+<div class="left">
+   <mat-form-field>
+    <mat-label>
+        Departing date min
+    </mat-label>
+    <input matInput [matDatepicker]="deparMin">
+    <mat-datepicker-toggle matSuffix [for]="deparMin"></mat-datepicker-toggle>
+    <mat-datepicker #deparMin></mat-datepicker>
+   </mat-form-field>
+</div>
+   <div class="right">
+
+   <mat-form-field>
+    <mat-label>
+        Departing date max
+    </mat-label>
+    <input matInput [matDatepicker]="deparMax">
+    <mat-datepicker-toggle matSuffix [for]="deparMax"></mat-datepicker-toggle>
+    <mat-datepicker #deparMax></mat-datepicker>
+   </mat-form-field>
+</div>
+</div>
+    </fieldset>
+</div>
